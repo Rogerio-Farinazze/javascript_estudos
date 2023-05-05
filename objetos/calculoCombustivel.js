@@ -15,4 +15,6 @@ class Carro {
 }
 
 const novoCarro = new Carro('Fusca', 'Azul', 1/10);
-console.log(novoCarro.calcularGasto(100, 5));
+const distancia = 100;
+const gasto = novoCarro.calcularGasto(distancia, 5); 
+console.log('O Carro ' + novoCarro.marca + ' da cor ' + novoCarro.cor + ' gasta o total de R$ ' + gasto + ' em um trajeto de ' + distancia + 'KM');

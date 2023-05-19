@@ -1,0 +1,14 @@
+<a href="#">
+    <img src="http://icons.iconarchive.com/icons/fasticon/angry-birds/128/yellow-bird-icon.png" 
+    onmouseover="this.src='http://icons.iconarchive.com/icons/fasticon/angry-birds/128/red-bird-icon.png'"
+    onmouseout="this.src='http://icons.iconarchive.com/icons/fasticon/angry-birds/128/yellow-bird-icon.png'"
+    border="0" alt=""/></a>
+<!-- Edição que cria mouse over na imagem do produto -->>
+    <img class="{{ image_class }}" src="{{ asset('img/empty.png') }}" 
+    data-src="{{ product.images[0].large }}"
+    onmouseover="this.src='{{ product.images[1].large }}'"
+    onmouseout="this.src='{{ product.images[0].large }}'" 
+    alt="{{ product.name }}">
+
+<!-- Original Tema Loja tray --> 
+    <img class="{{ image_class }}" src="{{ asset('img/empty.png') }}" data-src="{{ product.images[0].large }}" alt="{{ product.name }}">
